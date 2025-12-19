@@ -41,7 +41,12 @@ export const StatsAndTestimonials = () => {
               transition={{ duration: 0.5 }}
               className="flex-1 rounded-3xl bg-[#fafafa] px-6 py-5 text-right shadow-[0_18px_60px_rgba(15,23,42,0.05)] md:px-8 md:py-6"
             >
-              <div className="mb-4 flex items-center justify-between gap-3">
+              <div className="mb-4 flex items-center justify-between gap-3" dir='rtl'>
+                  <img
+                  src={testimonials[0].image}
+                  alt={testimonials[0].name}
+                  className="h-10 w-10 rounded-full object-cover"
+                />
                 <div className="flex flex-col items-start">
                   <span className="text-sm font-bold text-slate-900">
                     {testimonials[0].name}
@@ -50,11 +55,7 @@ export const StatsAndTestimonials = () => {
                     {testimonials[0].role}
                   </span>
                 </div>
-                <img
-                  src={testimonials[0].image}
-                  alt={testimonials[0].name}
-                  className="h-10 w-10 rounded-full object-cover"
-                />
+              
               </div>
               <p className="text-sm leading-relaxed text-slate-700 md:text-base">
                 {testimonials[0].quote}
@@ -101,6 +102,11 @@ export const StatsAndTestimonials = () => {
               className="flex-1 rounded-3xl bg-[#fafafa] px-6 py-5 text-right shadow-[0_18px_60px_rgba(15,23,42,0.05)] md:px-8 md:py-6"
             >
               <div className="mb-4 flex items-center justify-between gap-3">
+                   <img
+                  src={testimonials[1].image}
+                  alt={testimonials[1].name}
+                  className="h-10 w-10 rounded-full object-cover"
+                />
                 <div className="flex flex-col items-start">
                   <span className="text-sm font-bold text-slate-900">
                     {testimonials[1].name}
@@ -109,11 +115,7 @@ export const StatsAndTestimonials = () => {
                     {testimonials[1].role}
                   </span>
                 </div>
-                <img
-                  src={testimonials[1].image}
-                  alt={testimonials[1].name}
-                  className="h-10 w-10 rounded-full object-cover"
-                />
+             
               </div>
               <p className="text-sm leading-relaxed text-slate-700 md:text-base">
                 {testimonials[1].quote}
